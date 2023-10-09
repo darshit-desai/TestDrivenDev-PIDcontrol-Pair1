@@ -1,6 +1,6 @@
 /**
  * @file test.cpp
- * @author Sai Teja Giluara (saitejag@umd.edu) - Driver, Aaqib Barodawala (aakib@umd.edu) - Navigator
+ * @author Sai Teja Giluara (saitejag@umd.edu) - Driver, Aaqib Barodawala (abarodaw@umd.edu) - Navigator
  * @brief 
  * @version 0.1
  * @date 2023-10-09
