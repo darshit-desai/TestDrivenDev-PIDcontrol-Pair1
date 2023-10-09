@@ -1,0 +1,7 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,111,60,138"/>
+<area shape="rect" id="node2" href="$classtddgroup7__pair1_1_1PIDController.html#ab549bf4eb6a0a29414279836cb08633e" title="Compute the error." alt="" coords="108,5,331,47"/>
+<area shape="rect" id="node3" href="$classtddgroup7__pair1_1_1PIDController.html#a2c9c444a172100d19c0e5156ef4ac596" title="Set the Kd object." alt="" coords="108,71,331,112"/>
+<area shape="rect" id="node4" href="$classtddgroup7__pair1_1_1PIDController.html#acbc622fa652d360bac8f602094398c94" title="Set the Ki object." alt="" coords="108,136,331,177"/>
+<area shape="rect" id="node5" href="$classtddgroup7__pair1_1_1PIDController.html#a4cf9fe3880e27a03072dd54ee836dbbc" title="Set the Kp object." alt="" coords="108,201,331,243"/>
+</map>
