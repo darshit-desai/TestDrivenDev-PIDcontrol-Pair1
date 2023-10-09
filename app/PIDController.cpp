@@ -1,6 +1,6 @@
 /**
  * @file PIDController.cpp
- * @author (Part 1) Sai Teja Gilukara (saitejag@umd.edu) - Driver, Aaqib Barodawala (aakib@umd.edu) - Navigator
+ * @author (Part 1) Sai Teja Gilukara (saitejag@umd.edu) - Driver, Aaqib Barodawala (abarodaw@umd.edu) - Navigator
  * @author (Part 2) Darshit Desai (darshit@umd.edu) - Driver, Sameer Arjun S (ssarjun@umd.edu) - Navigator
  * @brief CPP file for PIDController class
  * @version 0.1
@@ -25,6 +25,8 @@ tddgroup7_pair1::PIDController::PIDController() {
   kp = 0.0;
   ki = 0.0;
   kd = 0.0;
+  errorVector.clear();
+  error = 0.0;
 }
 
 /**
@@ -34,7 +36,8 @@ tddgroup7_pair1::PIDController::PIDController() {
  * @param currentState 
  * @return double 
  */
-double tddgroup7_pair1::PIDController::computeError(double setPoint, double currentState) {
+double tddgroup7_pair1::PIDController::computeError(double setPoint,
+double currentState) {
   /**
    * @todo Compute the error using setPoint and currentState 
    * 
@@ -64,13 +67,12 @@ double tddgroup7_pair1::PIDController::computeFeedback(double error) {
   double total_feedback{0};
   Proportional_error = kp*(error);
   // double error = setPoint - currentState;
-  if(errorVector.size()>0){
-    for(int i=0;i<errorVector.size();i++){
+  if (errorVector.size() > 0) {
+    for (int i = 0; i < errorVector.size(); i++) {
       Integral_error += errorVector[i];
     }
     Differential_error = kd*(error - errorVector[errorVector.size()-1]);
-  }
-  else{
+  } else {
     Differential_error = 0.0;
   }
   Integral_error += error;
