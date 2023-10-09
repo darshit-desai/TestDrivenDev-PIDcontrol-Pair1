@@ -5,6 +5,8 @@
 
 **Authors of Pair 1**: Sai Teja Gilukara -(saitejag@umd.edu) - Driver , Aaqib Barodawala (aakib@umd.edu) - Navigator
 
+**Authors of Pair 2**: Darshit Desai - (darshit@umd.edu) - Driver, Sameer Arjun S (ssarjun@umd.edu) - Navigator
+
 A PID contol program for Acme Robotics using test driven development
 
 ## UML Diagram
