@@ -10,4 +10,4 @@ build/
 # Python
 *.pyc
 
-#Doxygen
+*.json
